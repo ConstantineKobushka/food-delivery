@@ -1,0 +1,141 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  color: #2c2c2c;
+}
+
+.container {
+  max-width: 1280px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  margin-right: auto;
+}
+.nav {
+  margin-right: 30px;
+}
+.nav-list {
+  display: flex;
+  gap: 28px;
+}
+.nav-link {
+  font-size: 14px;
+  padding: 28px 0;
+  display: block;
+  text-decoration: underline 1px solid transparent;
+  text-underline-offset: 2px;
+  transition:
+    color 0.2s ease-in,
+    text-decoration-color 0.2s ease-in;
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: #bbf330;
+  text-decoration: underline 1px solid #bbf330;
+}
+.header-btn {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #2c2c2c;
+  border-radius: 30px;
+  background: #bbf330;
+  min-width: 98px;
+  height: 32px;
+  border: none;
+}
+
+.hero {
+  padding: 14px 0;
+  margin-bottom: 55px;
+}
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero-content--wrapper {
+  width: 511px;
+}
+.hero-title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.2;
+  margin-bottom: 28px;
+}
+.hero-text {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+.hero-btn {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #2c2c2c;
+  border-radius: 30px;
+  min-width: 98px;
+  height: 32px;
+  background-color: #bbf330;
+  border: none;
+}
+.hero-img--wrapper {
+  width: 580px;
+  border: 31px solid #ffe550;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

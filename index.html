@@ -4,58 +4,83 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <a href="./index.html"><img src="./images/logo.svg" alt="Logo" width="66" height="52" /></a>
-      <nav>
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Service</a></li>
-          <li><a href="">Menu</a></li>
-          <li><a href="">Contact</a></li>
-        </ul>
-      </nav>
-      <button type="button">Order Now</button>
+    <!-- ======= Header ======= -->
+    <header class="header">
+      <div class="header-container container">
+        <a class="logo" href="./index.html"><img src="./images/logo.svg" alt="Logo" width="66" height="52" /></a>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item"><a class="nav-link" href="">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="">Service</a></li>
+            <li class="nav-item"><a class="nav-link" href="">Menu</a></li>
+            <li class="nav-item"><a class="nav-link" href="">Contact</a></li>
+          </ul>
+        </nav>
+        <button class="header-btn" type="button">Order Now</button>
+      </div>
     </header>
 
-    <section>
-      <h1>Enjoy Your Favorite Food From Anywhere</h1>
-      <p>
-        With just a few clicks, you can have your favorite meals delivered straight to your doorstep, no matter where
-        you are. Order now and enjoy a hassle-free and delicious meal from the comfort of your own home.
-      </p>
-      <button type="button">Order Now</button>
-      <img src="./images/hero/hero-img.png" alt="" width="528" height="528" />
-    </section>
-
-    <section>
-      <img src="./images/about/aple.png" alt="Aple" width="396" height="502" />
-      <h2>What’s Special About Our Offerings</h2>
-      <p>
-        With our platform, you can browse through a diverse selection of cuisines and local restaurants, and choose from
-        a variety of dishes that cater to your specific taste buds.
-      </p>
-      <ul>
-        <li>
-          <h3>Fasest Delivery</h3>
-          <p>Easy To Order</p>
-        </li>
-        <li>
-          <h3>
-            Our advanced logistics system and dedicated delivery partners ensure that your meals are delivered to you
-            within 30-minutes.
-          </h3>
-          <p>
-            You can browse through a wide variety of cuisines and restaurants, select your favorite meals, and place
-            your order in just a few clicks.
+    <!-- ======= Hero ======= -->
+    <section class="hero">
+      <div class="hero-container container">
+        <div class="hero-content--wrapper">
+          <h1 class="hero-title">Enjoy Your Favorite Food From Anywhere</h1>
+          <p class="hero-text">
+            With just a few clicks, you can have your favorite meals delivered straight to your doorstep, no matter
+            where you are. Order now and enjoy a hassle-free and delicious meal from the comfort of your own home.
           </p>
-        </li>
-      </ul>
-      <button type="button">Order Now</button>
+          <button class="hero-btn" type="button">Order Now</button>
+        </div>
+        <div class="hero-img--wrapper">
+          <img class="hero-img" src="./images/hero/hero-img.png" alt="Bowl with salad" width="528" height="528" />
+        </div>
+      </div>
     </section>
 
+    <!-- =======  ======= -->
+    <section class="">
+      <div class="container">
+        <img src="./images/about/aple.png" alt="Aple" width="396" height="502" />
+        <h2 class="">What’s Special About Our Offerings</h2>
+        <p class="">
+          With our platform, you can browse through a diverse selection of cuisines and local restaurants, and choose
+          from a variety of dishes that cater to your specific taste buds.
+        </p>
+        <ul class="">
+          <li class="">
+            <h3 class="">Fasest Delivery</h3>
+            <p class="">Easy To Order</p>
+          </li>
+          <li class="">
+            <h3 class="">
+              Our advanced logistics system and dedicated delivery partners ensure that your meals are delivered to you
+              within 30-minutes.
+            </h3>
+            <p class="">
+              You can browse through a wide variety of cuisines and restaurants, select your favorite meals, and place
+              your order in just a few clicks.
+            </p>
+          </li>
+        </ul>
+        <button class="" type="button">Order Now</button>
+      </div>
+    </section>
+
+    <!-- =======  ======= -->
     <section>
       <h2>Some of Our Favorites</h2>
       <p>Looking for something delicious?</p>
@@ -69,8 +94,7 @@
       </ul>
     </section>
 
-    <img class="img" src="" alt="" />
-
+    <!-- =======  ======= -->
     <section>
       <h2>What our Customers Say</h2>
       <p>Don't just take our word for it - see what our satisfied customers have to say</p>
@@ -96,6 +120,7 @@
       </ul>
     </section>
 
+    <!-- =======  ======= -->
     <section>
       <h2>Subscribe To Get Special Offers</h2>
       <p>Order now and receive 10% off your first meal with Enjoy Your Favorite Food From Anywhere.</p>
@@ -105,6 +130,7 @@
       </form>
     </section>
 
+    <!-- =======  ======= -->
     <footer>
       <a href="./index.html"><img src="./images/logo.svg" alt="Logo" width="66" height="52" /></a>
       <nav>
