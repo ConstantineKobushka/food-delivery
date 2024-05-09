@@ -147,7 +147,7 @@
         <li><a href="">Terms of Service</a></li>
         <li><a href="">Cookies Settings</a></li>
       </ul>
-      <form action="">
+      <form>
         <p>Subscribe</p>
         <input type="text" placeholder="Enter your email" /><button>Subscribe</button>
         <p>
@@ -157,5 +157,34 @@
       </form>
       <p>2022 FoodSta. All right reserved.</p>
     </footer>
+
+    <div class="backdrop is-open">
+      <div class="modal">
+        <button class="modal-close-btn" type="button">
+          <img class="modal-close-btn-img" src="./images/close-btn.svg" alt="" />
+          <!-- <svg class="modal-close-icon" width="12" height="12">
+            <use></use>
+          </svg> -->
+        </button>
+        <p class="modal-title">Order Form</p>
+        <form>
+          <div class="modal-field">
+            <label class="modal-label" for="user-name">Name</label>
+            <input class="modal-input" id="user-name" type="text" placeholder="Your name" required />
+          </div>
+          <div class="modal-field">
+            <label class="modal-label" for="user-phone">Phone number</label>
+            <input class="modal-input" id="user-phone" type="tel" placeholder="+38(0_ _) _ _ _   _ _   _ _" required />
+          </div>
+          <div class="modal-field">
+            <label class="modal-label" for="user-email">E-mail</label>
+            <input class="modal-input" id="user-email" type="email" placeholder="example@gmail.com" />
+          </div>
+          <button class="send-btn" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="./js/main.js"></script>
   </body>
 </html>
