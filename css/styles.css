@@ -71,7 +71,6 @@ body {
 .header {
   padding: 10px 0;
   box-shadow: 0px 4px 24px 0px rgba(105, 105, 105, 0.1);
-  position: relative;
 }
 .header-inner {
   display: flex;
@@ -81,8 +80,21 @@ body {
 .nav {
   display: none;
 }
+.mobile-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(94, 99, 99, 0.7);
+  transform: translateX(150%);
+  transition: transform 0.3s ease-in;
+  z-index: 1;
+}
+.mobile-overlay.is-open {
+  transform: translateX(0);
+}
 .mobile-nav {
-  position: relative;
   position: absolute;
   top: 0;
   right: 0;
@@ -92,18 +104,17 @@ body {
   border-radius: 30px 0px 30px 30px;
   background-color: #bbf330;
   box-shadow: 0px 4px 24px 0px rgba(105, 105, 105, 0.1);
-  transform: translateX(100%);
-  transition: transform 0.2s ease-in;
+  transform: translateX(150%);
+  transition: transform 0.3s ease-in;
 }
 .mobile-nav.is-open {
   transform: translateX(0);
 }
 .mobile-close-btn {
-  position: absolute;
-  top: 7px;
-  right: 9px;
   width: 24px;
   height: 24px;
+  display: block;
+  margin: 0 0px 16px auto;
   border: none;
   background-color: transparent;
 }
@@ -111,6 +122,9 @@ body {
   display: flex;
   flex-direction: column;
   gap: 32px;
+}
+.mobile-nav--link {
+  padding: 10px 20px 10px 0;
 }
 .header-btn {
   display: none;
@@ -658,7 +672,7 @@ body {
   border: 1px solid #ffe550;
   background-color: #fff;
   max-width: 395px;
-  min-width: 280px;
+  min-width: 270px;
   margin-bottom: 20px;
 }
 .subscribe-form--input::placeholder {
@@ -758,7 +772,7 @@ body {
 }
 .footer-form--input {
   max-width: 280px;
-  min-width: 280px;
+  min-width: 270px;
   height: 42px;
   padding: 12px;
   border-radius: 30px;
@@ -894,13 +908,12 @@ body {
   width: 100%;
   height: 100%;
   background: rgba(94, 99, 99, 0.7);
-  visibility: hidden;
-  opacity: 0;
+  transform: translateX(150%);
+  transition: transform 0.3s ease-in;
   z-index: 1;
 }
 .backdrop.is-open {
-  visibility: visible;
-  opacity: 1;
+  transform: translateX(0);
 }
 .modal {
   position: absolute;
@@ -908,7 +921,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 30px;
-  width: 320px;
+  width: 280px;
   height: 449px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.06);
   background: #ffe550;

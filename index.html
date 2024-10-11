@@ -37,18 +37,20 @@
           <button class="burger-btn button" type="button">
             <img src="./images/icons/burger-btn.svg" alt="Button open menu" />
           </button>
-          <nav class="mobile-nav">
-            <button class="mobile-close-btn" type="button">
-              <img class="mobail-close-btn-img" src="./images/icons/close-btn.svg" alt="" />
-            </button>
-            <ul class="mobile-nav--list">
-              <li class="mobile-nav--item"><a class="mobile-nav--link" href="">Home</a></li>
-              <li class="mobile-nav--item"><a class="mobile-nav--link" href="">About</a></li>
-              <li class="mobile-nav--item"><a class="mobile-nav--link" href="">Service</a></li>
-              <li class="mobile-nav--item"><a class="mobile-nav--link" href="">Menu</a></li>
-              <li class="mobile-nav--item"><a class="mobile-nav--link" href="">Contact</a></li>
-            </ul>
-          </nav>
+          <div class="mobile-overlay">
+            <nav class="mobile-nav">
+              <button class="mobile-close-btn" type="button">
+                <img class="mobail-close-btn-img" src="./images/icons/close-btn.svg" alt="" />
+              </button>
+              <ul class="mobile-nav--list">
+                <li class="mobile-nav--item"><a class="mobile-nav--link" href="">Home</a></li>
+                <li class="mobile-nav--item"><a class="mobile-nav--link" href="">About</a></li>
+                <li class="mobile-nav--item"><a class="mobile-nav--link" href="">Service</a></li>
+                <li class="mobile-nav--item"><a class="mobile-nav--link" href="">Menu</a></li>
+                <li class="mobile-nav--item"><a class="mobile-nav--link" href="">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
         </div>
       </div>
     </header>
@@ -79,42 +81,7 @@
     <section class="about">
       <div class="container">
         <div class="about-inner">
-          <div class="about-decor">
-            <picture class="about-picture">
-              <sourse
-                srcset="./images/about/aple-desctop.png 1x, ./images/about/aple-desctop@2x.png 2x"
-                type="image/png"
-                media="(min-width: 1280px)"
-                width="396"
-                height="555"
-              >
-              </sourse>
-              <sourse
-                srcset="./images/about/aple-tablet.png 1x, ./images/about/aple-tablet@2x.png 2x"
-                type="image/png"
-                media="(min-width: 768px)"
-                width="258"
-                height="363"
-              >
-              </sourse>
-              <sourse
-                srcset="./images/about/aple-mobile.png 1x, ./images/about/aple-mobile@2x.png 2x"
-                type="image/png"
-                media="(min-width: 320px)"
-                width="202"
-                height="285"
-              >
-              </sourse>
-              <img
-                class="about-decor--img"
-                src="./images/about/aple-desctop@2x.png"
-                srcset="./images/about/aple-desctop.png 1x, ./images/about/aple-desctop@2x.png 2x"
-                alt="Employee number one"
-                width="396"
-                height="555"
-              />
-            </picture>
-          </div>
+          
           <div class="about-content">
             <h2 class="about-title">What’s Special About Our Offerings</h2>
             <p class="about-text">
@@ -158,6 +125,41 @@
                 </a>
               </div>
             </div>
+          </div><div class="about-decor">
+            <picture class="about-picture">
+              <sourse
+                srcset="./images/about/aple-desctop.png 1x, ./images/about/aple-desctop@2x.png 2x"
+                type="image/png"
+                media="(min-width: 1280px)"
+                width="396"
+                height="555"
+              >
+              </sourse>
+              <sourse
+                srcset="./images/about/aple-tablet.png 1x, ./images/about/aple-tablet@2x.png 2x"
+                type="image/png"
+                media="(min-width: 768px)"
+                width="258"
+                height="363"
+              >
+              </sourse>
+              <sourse
+                srcset="./images/about/aple-mobile.png 1x, ./images/about/aple-mobile@2x.png 2x"
+                type="image/png"
+                media="(min-width: 320px)"
+                width="202"
+                height="285"
+              >
+              </sourse>
+              <img
+                class="about-decor--img"
+                src="./images/about/aple-desctop@2x.png"
+                srcset="./images/about/aple-desctop.png 1x, ./images/about/aple-desctop@2x.png 2x"
+                alt="Employee number one"
+                width="396"
+                height="555"
+              />
+            </picture>
           </div>
         </div>
       </div>
@@ -173,7 +175,7 @@
           <a class="products-item--link" href=""></a>
         </li>
         <li class="products-item">
-          <img class="products-item--img" src="./images/products/pasta.png" srcset="./images/products/pasta.png 1x, ./images/products/pasta@2x.png 2x" alt="Pasta" />
+          <img class="products-item--img" src="./images/products/pasta.png" srcset="./images/products/pasta.png 1x, ./images/products/pasta@2x.png" alt="Pasta" />
           <a class="products-item--link" href=""></a>
         </li>
         <li class="products-item">
