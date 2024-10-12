@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function () {
           const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY;
 
           window.scrollTo({
-            top: targetPosition - 80,
+            top: targetPosition,
             behavior: 'smooth',
           });
         }
