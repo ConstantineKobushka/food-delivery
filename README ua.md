@@ -1,6 +1,6 @@
 # Food Delivery – Швидка доставка улюблених страв 🥗 🍜 🥡 🚴 🚚
 
-🔗 **Демо:** [https://constantinekobushka.github.io/food-delivery/](https://constantinekobushka.github.io/food-delivery/)
+🔗 **Демо:** [https://constantinekobushka.github.io/food-delivery](https://constantinekobushka.github.io/food-delivery)
 
 ## 🔎 Опис проєкту
 
@@ -36,4 +36,7 @@
 
 ```bash
 git clone https://github.com/ConstantineKobushka/food-delivery
+
+Відкрийте папку проєкту у вашому редакторі коду (наприклад, VS Code)
+та відкрийте файл index.html у браузері — і сайт готовий до перегляду.
 ```

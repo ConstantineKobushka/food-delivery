@@ -36,4 +36,7 @@ Created for those who value **quality**, **speed**, and **accessibility**.
 
 ```bash
 git clone https://github.com/ConstantineKobushka/food-delivery
+
+Open the project folder in your code editor (e.g., VS Code)
+and open the index.html file in your browser — and the site is ready to view.
 ```
