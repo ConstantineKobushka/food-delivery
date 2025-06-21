@@ -1,6 +1,6 @@
 # Food Delivery – Швидка доставка улюблених страв 🥗 🍜 🥡 🚴 🚚
 
-🔗 **Демо:** [https://constantinekobushka.github.io/food-delivery](https://constantinekobushka.github.io/food-delivery)
+🔗 **Демо:** [https://constantinekobushka.github.io/food-delivery/](https://constantinekobushka.github.io/food-delivery/)
 
 ## 🔎 Опис проєкту
 
