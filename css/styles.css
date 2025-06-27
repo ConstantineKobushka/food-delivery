@@ -118,6 +118,7 @@ body {
   margin: 0 0px 16px auto;
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 .mobile-nav--list {
   display: flex;

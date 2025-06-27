@@ -9,6 +9,20 @@ document.addEventListener('DOMContentLoaded', function () {
   const modal = document.querySelector('.modal');
   const modalCloseBtn = document.querySelector('.modal-close-btn');
 
+  burgerBtn.addEventListener('click', openMobileMenuHandler);
+  mobileCloseBtn.addEventListener('click', closeMobileMenuHandler);
+  mobileOverlay.addEventListener('click', closeMobileMenuHandler);
+  mobileNav.addEventListener('click', stopPropagation);
+  mobileNav.addEventListener('click', scrollToSection);
+
+  orderBtns.forEach((orderBtn) =>
+    orderBtn.addEventListener('click', openModalHandler)
+  );
+  modalCloseBtn.addEventListener('click', closeModalHandler);
+  backdrop.addEventListener('click', closeModalHandler);
+
+  modal.addEventListener('click', stopPropagation);
+
   function openMobileMenuHandler() {
     mobileOverlay.classList.add('is-open');
     mobileNav.classList.add('is-open');
@@ -41,7 +55,8 @@ document.addEventListener('DOMContentLoaded', function () {
         const targetElement = document.querySelector(targetId);
 
         if (targetElement) {
-          const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY;
+          const targetPosition =
+            targetElement.getBoundingClientRect().top + window.scrollY;
 
           window.scrollTo({
             top: targetPosition,
@@ -53,16 +68,4 @@ document.addEventListener('DOMContentLoaded', function () {
       closeMobileMenuHandler();
     }
   }
-
-  burgerBtn.addEventListener('click', openMobileMenuHandler);
-  mobileCloseBtn.addEventListener('click', closeMobileMenuHandler);
-  mobileOverlay.addEventListener('click', closeMobileMenuHandler);
-  mobileNav.addEventListener('click', stopPropagation);
-  mobileNav.addEventListener('click', scrollToSection);
-
-  orderBtns.forEach((orderBtn) => orderBtn.addEventListener('click', openModalHandler));
-  modalCloseBtn.addEventListener('click', closeModalHandler);
-  backdrop.addEventListener('click', closeModalHandler);
-
-  modal.addEventListener('click', stopPropagation);
 });
