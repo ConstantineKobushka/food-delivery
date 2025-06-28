@@ -23,22 +23,30 @@ document.addEventListener('DOMContentLoaded', function () {
 
   modal.addEventListener('click', stopPropagation);
 
+  function noScrol() {
+    document.body.classList.toggle('no-scroll');
+  }
+
   function openMobileMenuHandler() {
     mobileOverlay.classList.add('is-open');
     mobileNav.classList.add('is-open');
+    noScrol();
   }
 
   function closeMobileMenuHandler() {
     mobileOverlay.classList.remove('is-open');
     mobileNav.classList.remove('is-open');
+    noScrol();
   }
 
   function openModalHandler() {
     backdrop.classList.add('is-open');
+    noScrol();
   }
 
   function closeModalHandler() {
     backdrop.classList.remove('is-open');
+    noScrol();
   }
 
   function stopPropagation(e) {

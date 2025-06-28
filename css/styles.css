@@ -67,6 +67,10 @@ body {
   transition: background-color 0.2s ease-in;
 }
 
+.no-scroll {
+  overflow-y: hidden;
+}
+
 /*! ======= Header =======*/
 
 .header {
